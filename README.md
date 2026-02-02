@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+🛒 SmartShop - E-commerce Intelligence
+O SmartShop é uma plataforma de e-commerce moderna e responsiva desenvolvida para demonstrar práticas avançadas de desenvolvimento Front-end. O projeto foca em uma experiência de usuário fluida, gerenciamento de estado complexo e consumo de APIs assíncronas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Funcionalidades
+Catálogo Dinâmico: Listagem de produtos consumindo a Fake Store API.
 
-Currently, two official plugins are available:
+Filtros por Categoria: Navegação inteligente para segmentar produtos em tempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Carrinho de Compras: Sistema completo de adição, remoção e persistência de dados.
 
-## React Compiler
+Páginas de Detalhes: Rotas dinâmicas para exibição individual de produtos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+UI/UX Premium: Interface construída com Shadcn/UI e Radix UI, garantindo acessibilidade e componentes de alta qualidade.
 
-## Expanding the ESLint configuration
+Feedback ao Usuário: Notificações de ações via Sonner (Toasts) e estados de carregamento.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🛠️ Stack Tecnológica
+O projeto utiliza o que há de mais moderno no ecossistema React em 2026:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Core: React 18 + Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Linguagem: TypeScript (Tipagem estrita para maior segurança)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Estilização: Tailwind CSS + Tailwind Merge
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Componentes: Radix UI + Shadcn/UI (Acessibilidade e consistência)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Gerenciamento de Dados: TanStack Query (React Query) para Cache e Fetching
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Roteamento: React Router Dom v6
+
+Ícones: Lucide React
+
+Testes: Vitest + React Testing Library
+
+⚙️ Decisões Técnicas (Destaque de Pleno)
+Arquitetura de Componentes: Separação clara entre componentes de UI (átomos) e componentes de negócio (páginas).
+
+Hooks Customizados: Implementação de useCart e useProducts para centralizar a lógica de negócio e manter os componentes limpos.
+
+Performance: Uso de React.memo e estratégias de cache do React Query para evitar re-renderizações desnecessárias e chamadas de API repetitivas.
+
+Acessibilidade: Utilização de primitivos do Radix UI para garantir que modais, dropdowns e menus sejam navegáveis via teclado e leitores de tela.
+
+🔧 Como Rodar o Projeto
+Clone o repositório:
+
+Bash
+git clone https://github.com/thais-luza/smart-cart.git
+Instale as dependências:
+
+Bash
+npm install
+Inicie o servidor de desenvolvimento:
+
+Bash
+npm run dev
+
+Desenvolvido com ☕ por Thais Luza.
