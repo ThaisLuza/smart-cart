@@ -156,18 +156,6 @@ npm run test         # Executa os testes
 
 ---
 
-## 🧪 Testes
-
-O projeto utiliza Vitest e React Testing Library para garantir a qualidade do código:
-
-```bash
-npm run test              # Executa os testes
-npm run test:ui           # Interface gráfica dos testes
-npm run test:coverage     # Relatório de cobertura
-```
-
----
-
 ## 📦 Build e Deploy
 
 Para gerar a build de produção:
