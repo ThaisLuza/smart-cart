@@ -43,7 +43,7 @@ Smart Cart é uma solução completa de carrinho de compras que oferece uma expe
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/smart-cart.git
+git clone https://github.com/ThaisLuza/smart-cart.git
 cd smart-cart
 ```
 
