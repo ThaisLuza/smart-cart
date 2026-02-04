@@ -57,7 +57,7 @@ npm install
 npm run dev
 ```
 
-O projeto estará disponível em `https://smart-cart-taupe.vercel.app/`
+O projeto estará disponível em https://smart-cart-taupe.vercel.app/
 
 ## 🏗️ Build para Produção
 
